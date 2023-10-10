@@ -1,6 +1,10 @@
 {
   "rewrites": [
     {
+      "source": "/init.ts",
+      "destination": "https://raw.githubusercontent.com/stews-io/toolkit/production/stew-command/init.ts"
+    },
+    {
       "source": "/:toolkit_version([\\d]+.[\\d]+.[\\d]+)/command/:path*",
       "destination": "https://raw.githubusercontent.com/stews-io/toolkit/:toolkit_version/stew-command/:path*"
     },
