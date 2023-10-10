@@ -5,12 +5,28 @@
       "destination": "https://raw.githubusercontent.com/stews-io/toolkit/:toolkit_version/stew-command/:path*"
     },
     {
+      "source": "/:toolkit_version([\\d]+.[\\d]+.[\\d]+)/scripts/serveStew.ts",
+      "destination": "https://raw.githubusercontent.com/stews-io/toolkit/:toolkit_version/development-scripts/serveStewBuild.ts"
+    },
+    {
+      "source": "/:toolkit_version([\\d]+.[\\d]+.[\\d]+)/scripts/:path*",
+      "destination": "https://raw.githubusercontent.com/stews-io/toolkit/:toolkit_version/development-scripts/:path*"
+    },
+    {
       "source": "/:toolkit_version([\\d]+.[\\d]+.[\\d]+)/:path*",
       "destination": "https://raw.githubusercontent.com/stews-io/toolkit/:toolkit_version/:path*"
     },
     {
       "source": "/command/:path*",
       "destination": "https://raw.githubusercontent.com/stews-io/toolkit/production/stew-command/:path*"
+    },
+    {
+      "source": "/scripts/serveStew.ts",
+      "destination": "https://raw.githubusercontent.com/stews-io/toolkit/production/development-scripts/serveStewBuild.ts"
+    },
+    {
+      "source": "/scripts/:path*",
+      "destination": "https://raw.githubusercontent.com/stews-io/toolkit/production/development-scripts/:path*"
     },
     {
       "source": "/:path*",
